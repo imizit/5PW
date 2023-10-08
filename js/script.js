@@ -188,11 +188,7 @@ let script = {
 					},
 					"True": {
 						"Choice": {
-							"Text": "It seems you have already played the demo, do you wish to skip the introduction?",
-							"Skip": {
-								"Text": "Skip",
-								"Do": "jump Topics"
-							},
+							"Text": "Welcome to 5PW Game!",
 							"Continue": {
 								"Text": "Continue",
 								"Do": "jump Introduction"
