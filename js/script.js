@@ -346,13 +346,17 @@ let script = {
 				Storage.set ("played", true);
 				return true;
 			},
-			{"Choice":{
-				"Text":	"Create your own world as part of the game.",
-				"Animations":{
+			{
+				"Choice": {
+				  "Text": "Create your own world as part of the game.",
+				  "Animations": {
 					"Text": "Create my own world",
-					"Do": "link ./puzzle/"
+					"Do": function () {
+					  window.open("https://5-pw-puzzle.vercel.app/", "_blank");
+					}
+				  }
 				}
-			}}
+			  }			  
 		]
 	},
 };
