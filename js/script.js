@@ -14,30 +14,7 @@
 
 /* global Storage */
 
-// Define the messages used in the game.
-let messages = {
-	"Credits": {
-		"Title": "Awesome people!",
-		"Subtitle": "Thanks to everyone.",
-		"Message": `
-			Music From:
-			<div xmlns:cc='http://creativecommons.org/ns#' about='urn:sha1:IJ6UMFRNC6G7KCRWZJWZYCPR5Y2XIXCG'>
-				<a rel='cc:attributionURL' property='cc:attributionName' href='http://ccmixter.org/files/_ghost/25389'  target='_blank'> _ghost</a> /
-				<a rel='license' href='http://creativecommons.org/licenses/by/3.0/'  target='_blank'>CC BY 3.0</a>
-			</div>
-			<p>Evelyn Sprite from: <a href='http://miririri.deviantart.com/art/Evelyn-Sprite-Set-Starter-Pack-free-minipack-347585657'  target='_blank'>miririri</a></p>
-			<p>Backgrounds from the one and only, <a href='https://lemmasoft.renai.us/forums/viewtopic.php?f=52&t=17302' target='_blank'>Uncle Mugen</a>!</p>`
-	}
-};
 
-// Define the notifications used in the game
-let notifications = {
-	"End": {
-		"title": "Things just got real!",
-		"body": "You finished Monogatari 101.",
-		"icon": "img/icon_192x192.png"
-	}
-};
 
 // Define the Particles JS Configurations used in the game
 let particles = {
@@ -168,15 +145,8 @@ const sound = {
 
 };
 
-// Define the videos used in the game.
-const videos = {
-	"Dandelion": "DandelionTimelapse.mp4"
-};
 
-// Define the images used in the game.
-const images = {
 
-};
 
 // Define the backgrounds for each scene.
 const scenes = {
@@ -384,14 +354,7 @@ let script = {
 				"Text":	"Create your own world as part of the game.",
 				"Animations":{
 					"Text": "Create my own world",
-					"Do": "jump Animations"
-				},
-				"Nothing": {
-					"Text": "Nothing",
-					"Do": "jump Nothing",
-					"Condition": function () {
-						return storage.playing && storage.media && storage.scripting && storage.animations;
-					}
+					"Do": "link ./puzzle/"
 				}
 			}}
 		]
