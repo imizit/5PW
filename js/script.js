@@ -336,27 +336,26 @@ let script = {
 			"e As guardians of this way of life, we've coexisted with our planet for centuries.",
 			"e Your visit to Nebulithoria concludes here, but your cosmic exploration begins.",
 			"e Imagination leads us toward a brighter future. It's an open invitation for all, young and old, to embark on a quest to discover the wonders of the universe.",
-			"jump Topics",
 		],
 
 		"Topics": [
 			"scene Classroom",
 			"show e Happy with fadeIn",
 			function () {
-				Storage.set ("played", true);
+				Storage.set("played", true);
 				return true;
 			},
 			{
 				"Choice": {
-				  "Text": "Create your own world as part of the game.",
-				  "Animations": {
-					"Text": "Create my own world",
-					"Do": function () {
-					  window.open("https://5-pw-puzzle.vercel.app/", "_blank");
+					"Text": "Go home to Create my own world",
+					"Animations": {
+						"Text": "Go home to Create my own world",
+						"Do": "end"
 					}
-				  }
 				}
-			  }			  
+			}
 		]
+		
+		
 	},
 };

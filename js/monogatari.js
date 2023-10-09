@@ -2404,7 +2404,27 @@ $_ready(function () {
 						}).catch(function () {
 							block = false;
 						});
+					}else if (typeof statement.OpenURL !== "undefined") {
+						// Handle the OpenURL action here
+						const url = statement.OpenURL.Do.split(" ")[1]; // Extract the URL from the string
+					
+						// Create a link as a button with a class for styling
+						const linkButton = document.createElement("a");
+						linkButton.href = url;
+						linkButton.textContent = "Go to the website";
+						linkButton.classList.add("button"); // Add a CSS class for styling (you can define the style in your CSS file)
+					
+						// Append the link button to a container element
+						const container = document.getElementById("your-container-id"); // Replace with the actual ID of your container
+						container.appendChild(linkButton);
+					
+						block = true; // Prevent further script execution
 					}
+					
+					
+					
+					
+
 					break;
 			}
 		} catch (e) {
