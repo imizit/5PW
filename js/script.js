@@ -336,6 +336,7 @@ let script = {
 			"e As guardians of this way of life, we've coexisted with our planet for centuries.",
 			"e Your visit to Nebulithoria concludes here, but your cosmic exploration begins.",
 			"e Imagination leads us toward a brighter future. It's an open invitation for all, young and old, to embark on a quest to discover the wonders of the universe.",
+			"jump Topics",
 		],
 
 		"Topics": [
